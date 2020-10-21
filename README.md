@@ -34,4 +34,5 @@ It might not be very obvious at first glance but the game actually comes with a 
 
 ![](score-tracker.png)
 
+Also, while up arrow key is usually used, it actually accepts any key that is not "q", which quits the game. 
 
