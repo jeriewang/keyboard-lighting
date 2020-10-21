@@ -1,7 +1,6 @@
 from curses import wrapper
 import curses
 from time import time
-from pprint import pprint
 
 rec=[]
 

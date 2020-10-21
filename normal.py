@@ -13,10 +13,11 @@ arrow_keys = SyncGroup(UP_ARROW, DOWN_ARROW, LEFT_ARROW, RIGHT_ARROW)
 num_keys = SyncGroup(NUM_0, NUM_1, NUM_2, NUM_3, NUM_4, NUM_5, NUM_6, NUM_7, NUM_8, NUM_9, NUM_LK, NUM_SLASH,
                      NUM_ASTERISK, NUM_MINUS, NUM_PLUS, NUM_DEL, NUM_ENTER)
 
+
 def normal():
     keyboard.fx.advanced.matrix.reset()
-    keyboard.game_mode_led=False
-    keyboard.macro_mode_led=False
+    keyboard.game_mode_led = False
+    keyboard.macro_mode_led = False
     ESC.set(magenta)
     function_keys.set(Color(102, 102, 255))
     screen_controls.set(yellow)
@@ -25,11 +26,12 @@ def normal():
     home_row.set(white)
     control_keys.set(Color(0, 100, 100))
     bottom_row.set(white)
-    arrow_keys.set(Color(120,255,144))
+    arrow_keys.set(Color(120, 255, 144))
     space_row.set(white)
     num_keys.set(Color(250, 120, 255))
 
     keyboard.fx.advanced.draw()
+
 
 if __name__ == '__main__':
     normal()

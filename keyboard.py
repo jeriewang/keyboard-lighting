@@ -1,13 +1,4 @@
 from openrazer.client import DeviceManager
-from pprint import pprint
-import time
-
-
-def set_brightness(v: int):
-    f = open('/sys/bus/hid/drivers/razerkbd/0003:1532:021E.000B/matrix_brightness', 'w')
-    f.write(str(v))
-    f.close()
-
 
 manager = DeviceManager()
 keyboard = manager.devices[0]
